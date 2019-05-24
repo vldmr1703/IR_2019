@@ -82,11 +82,11 @@ public class Area3 implements Area {
 
     @Override
     public double[] xIn() {
-        return new double[]{PI/2, 3*PI/2};
+        return new double[]{2,1};
     }
 
     @Override
     public double[] yOut() {
-        return new double[]{5,0};
+        return new double[]{0,0};
     }
 }

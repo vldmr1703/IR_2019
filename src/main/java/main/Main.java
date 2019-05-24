@@ -30,7 +30,7 @@ public class Main {
         for (int i = 0; i < 2 * n; i++) {
             t[i] = i * PI / n;
         };
-        Area area = new Area3();
+        Area area = new Area4();
 
         XYSeriesCollection xySeriesCollection = new XYSeriesCollection();
         XYSeries[] exactSeries = new XYSeries[2];

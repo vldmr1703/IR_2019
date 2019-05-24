@@ -14,12 +14,12 @@ import static utils.Utils.r;
 
 public class Landveber {
     public static void main(String[] args) {
-        double eps = 0.0001;
-        Area area = new Area3();
+        double eps = 0.00001;
+        Area area = new Area4();
         double h1 = 0;
         double h;
-        int n = 32;
-        double alpha = 0.3;
+        int n = 64;
+        double alpha = 0.1;
         int k = 0;
         double u;
         double v;
@@ -51,7 +51,7 @@ public class Landveber {
             System.out.println(k + "\tv\t| " + v);
             h1 = h - alpha * v;
             k++;
-            System.out.println("Diff " + area.getExactSolution());
+            System.out.println("Exact " + area.getExactSolution());
         } while (Math.abs(h1 - h) > eps);
         System.out.println(k + " iterations");
         System.out.println("Diff " + abs(area.getExactSolution() - u));

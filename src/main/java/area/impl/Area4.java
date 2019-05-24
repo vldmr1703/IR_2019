@@ -77,12 +77,12 @@ public class Area4 implements Area {
 
     @Override
     public double[] xIn() {
-        return new double[]{0,0};
+        return new double[]{-0.5,0};
     }
 
     @Override
     public double[] yOut() {
-        return new double[]{2,0};
+        return new double[]{0,2};
     }
 
     public double b2DD(double t) {
